@@ -1,0 +1,14 @@
+Headless setup
+
+If you want to setup your Raspberry Pi headless, then here is the setup instruction:
+https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
+
+Here is a good wpa_supplicant content: (from next line to the end)
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+	id_str="home"
+	ssid="your_ssid"
+	psk="your_password"
+}
